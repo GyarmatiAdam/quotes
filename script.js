@@ -29,6 +29,7 @@ quoteBtn.addEventListener('click', displayQuote);
 
 function displayQuote(){
 
+/** Creates a random number of the quotes  */
     let number = Math.floor(Math.random() * quotes.length);
     quoteAuthor.innerHTML = quotes[number].name;
     quote.innerHTML = quotes[number].quote;
